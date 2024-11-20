@@ -7,18 +7,28 @@ const PricingBox = ({ product }: { product: Price }) => {
   // POST request
   const handleSubscription = async (e: any) => {
     e.preventDefault();
-    const { data } = await axios.post(
-      "/api/payment",
-      {
-        priceId: product.id,
-      },
-      {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      },
-    );
-    window.location.assign(data);
+    // const { data } = await axios.post(
+    //   "/api/payment",
+    //   {
+    //     priceId: product.id,
+    //   },
+    //   {
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //   },
+    // );
+    // window.location.assign(data);
+    console.log(product)
+    if ( product.nickname === "Basic" ){
+      window.location.assign("https://buy.stripe.com/test_bIY02E0Nm7G739C288");
+    }
+    if ( product.nickname === "Premium" ){
+      window.location.assign("https://buy.stripe.com/test_9AQaHi9jS2lN7pS7st");
+    }
+    if ( product.nickname === "Business" ){
+      window.location.assign("https://buy.stripe.com/test_aEU2aMbs07G7cKccMO");
+    } 
   };
 
   return (
