@@ -3,7 +3,7 @@ import { Price } from "@/types/price";
 export const pricingData: Price[] = [
   {
     id: "price_1QNElrHgui4O3QJ2XYNkI9Ma",
-    unit_amount: 100 * 100,
+    unit_amount: 39 * 100,
     nickname: "Basic",
     offers: [
       "1 User",
@@ -16,7 +16,7 @@ export const pricingData: Price[] = [
   },
   {
     id: "price_1QNEnIHgui4O3QJ22jm4pmPZ",
-    unit_amount: 200 * 100,
+    unit_amount: 259 * 100,
     nickname: "Premium",
     offers: [
       "5 Users",
@@ -29,7 +29,7 @@ export const pricingData: Price[] = [
   },
   {
     id: "price_1QNEmWHgui4O3QJ2pfBoEcfU",
-    unit_amount: 300 * 100,
+    unit_amount: 1299 * 100,
     nickname: "Business",
     offers: [
       "10 Users",
