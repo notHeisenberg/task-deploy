@@ -3,7 +3,7 @@
 
 datasource db {
   provider          = "postgresql"
-  url               = env("DATABASE_URL")
+  url               = "postgres://avnadmin:AVNS_cBT7aII7J3GnuTOvcAF@pg-2a838225-mahfuzantor2-304c.e.aivencloud.com:27673/defaultdb?sslmode=require"
   shadowDatabaseUrl = env("SHADOW_DATABASE_URL") // Only needed when using a cloud provider that doesn't support the creation of new databases, like Heroku. Learn more: https://pris.ly/d/migrate-shadow
 }
 
