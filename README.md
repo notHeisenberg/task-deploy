@@ -90,3 +90,4 @@ For a wider range of options, feel free to browse our collection of [Next.js Tem
 - Update signin & signup page Design
 - Integrated Magic link signin
 - & Forgot password
+
